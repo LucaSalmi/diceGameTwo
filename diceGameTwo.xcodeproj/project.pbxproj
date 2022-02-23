@@ -11,6 +11,8 @@
 		C8AB7DE627C6359000E8BFE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB7DE527C6359000E8BFE6 /* ContentView.swift */; };
 		C8AB7DE827C6359100E8BFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8AB7DE727C6359100E8BFE6 /* Assets.xcassets */; };
 		C8AB7DEB27C6359100E8BFE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8AB7DEA27C6359100E8BFE6 /* Preview Assets.xcassets */; };
+		C8AB7DF227C6456000E8BFE6 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB7DF127C6456000E8BFE6 /* dice.swift */; };
+		C8AB7DF427C645C400E8BFE6 /* BustSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB7DF327C645C400E8BFE6 /* BustSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C8AB7DE527C6359000E8BFE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8AB7DE727C6359100E8BFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8AB7DEA27C6359100E8BFE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8AB7DF127C6456000E8BFE6 /* dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dice.swift; sourceTree = "<group>"; };
+		C8AB7DF327C645C400E8BFE6 /* BustSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BustSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				C8AB7DE327C6359000E8BFE6 /* diceGameTwoApp.swift */,
 				C8AB7DE527C6359000E8BFE6 /* ContentView.swift */,
+				C8AB7DF327C645C400E8BFE6 /* BustSheet.swift */,
+				C8AB7DF127C6456000E8BFE6 /* dice.swift */,
 				C8AB7DE727C6359100E8BFE6 /* Assets.xcassets */,
 				C8AB7DE927C6359100E8BFE6 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8AB7DF227C6456000E8BFE6 /* dice.swift in Sources */,
+				C8AB7DF427C645C400E8BFE6 /* BustSheet.swift in Sources */,
 				C8AB7DE627C6359000E8BFE6 /* ContentView.swift in Sources */,
 				C8AB7DE427C6359000E8BFE6 /* diceGameTwoApp.swift in Sources */,
 			);
