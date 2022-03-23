@@ -16,6 +16,7 @@ struct ContentView: View {
     @State var totalSum = 0
     @State var busted = false
     @State var numberOfRounds = 0
+    @State var victory = false
     
     var body: some View {
         
@@ -79,22 +80,35 @@ struct ContentView: View {
         .sheet(isPresented: $busted, onDismiss: {
             sum = 0
             totalSum = 0
+            numberOfRounds = 0
         }){
             BustSheet(n: sum)
         }
+        .sheet(isPresented: $victory, onDismiss: {
+            sum = 0
+            totalSum = 0
+            numberOfRounds = 0
+        }, content: {
+            VictorySheet(v: numberOfRounds)
+        })
     }
     
     func roll(){
         
+        numberOfRounds += 1
         newValues()
         sum += diceNumber1 + diceNumber2
+        totalSum += diceNumber1 + diceNumber2
         
         if sum >= 21{
             
             busted = true
             
-        }else{
-            totalSum += sum
+        }
+        
+        if totalSum >= 100{
+            
+            victory = true
             
         }
     }
@@ -109,9 +123,7 @@ struct ContentView: View {
         
         sum = 0
         
-        if totalSum >= 100{
-            print("WIN")
-        }
+        
     }
 }
 
